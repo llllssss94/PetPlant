@@ -1,0 +1,38 @@
+Reference : http://moomini.tistory.com/64
+
+# MySQL 공식사이트
+ http://www.mysql.com
+
+# Dwonloads - Community - MySQL Community Server(GPL)
+
+# 운영체제에 맞는 ZIP Archive를 다운받는다.
+
+# No thanks, just start my download.
+
+# 다운 받은 파일의 압축을 풀어 C드라이브로 옮긴 후 폴더 이름을 mysql로 변경한다.
+
+# C:\mysql\bin
+
+# my.ini 파일이 설정파일
+
+# my.ini 에서 [mysqld] 부분
+ basedir=C:\mysql\
+ basedir=C:\mysql\data
+ port=3306
+
+# mysql 폴더 안에 data 폴더를 생성한다.
+
+# cmd 관리자
+ cd C:\mysql/bin
+ mysqld --insall
+ mysqld --initialize
+ mysqld
+
+# data 폴더 안의 관리자.err 안에 roo@localhost : 뒤에 있는 것이 루트 패스워드
+
+# 컴퓨터관리 - 서비스 및 응용프로그램 - 서비스 - MySQL 마우스 우클릭 - 시작
+
+# mysql - u - root - p
+
+ 
+ 

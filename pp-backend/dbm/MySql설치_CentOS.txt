@@ -1,0 +1,14 @@
+# yum -y install http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm
+ 
+# yum -y install mysql-community-server
+ 
+# systemctl start mysqld
+ 
+# systemctl enable mysqld
+ 
+# mysql
+ 
+ 
+mysql>quit
+
+reboot 이후 mysql 명령어 입력시 성공하면 설치완료된 것이다.

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/profile_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/profile_contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_sub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/profile_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/profile_plant_name"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/textform"
+                        android:hint="@string/profile_plant_name"
+                        android:paddingLeft="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_photo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/profile_photo"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/photoexample" />
+
+                    <Button
+                        android:id="@+id/profile_takepicture_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/takephoto_button"
+                        android:text="@string/take_photo"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/profile_plant_type"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_stroked_view"
+                        android:hint="@string/profile_plant_type"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp" />
+
+                    <Button
+                        android:id="@+id/profile_search_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/takephoto_button"
+                        android:text="@string/image_search"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_machine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/profile_machine"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_stroked_view"
+                        android:hint="@string/profile_serialNumber"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_stroked_view" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profile_submit"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:text="@string/profile_submit"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_drawer_nav"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="DRAWER"
+            android:textSize="48sp" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

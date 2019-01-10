@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/illumination_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="0%"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/illumination_arc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        app:arcColor="@color/bright_mandarin"
+        app:arcWidth="6dp"
+        app:enabled="false"
+        app:max="100"
+        app:progressColor="@color/darker_mandarin"
+        app:progressWidth="7dp"
+        app:startAngle="0"
+        app:sweepAngle="360" />
+</FrameLayout>

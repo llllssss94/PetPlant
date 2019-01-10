@@ -1,0 +1,1 @@
+# MySQL 외부접속 : http://all-record.tistory.com/95

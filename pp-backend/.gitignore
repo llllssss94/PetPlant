@@ -1,0 +1,7 @@
+node_modules
+
+.env
+image_classification_module/data/
+image_classification_module/contour/
+image_classification_module/keras/
+image_classification_module/OriginalData/

@@ -1,0 +1,14 @@
+Reference : http://zero-gravity.tistory.com/274
+
+# MySQL 설정파일
+ /etc/my.cnf
+
+# 보안설정
+ /usr/bin/mysql_secure_installation
+
+# 포트허용
+ CentOS 7 부터 iptables 대신 firewalld를 사용.
+ firewall-cmd --permanent --zone=public --add-port=3306/tcp
+ firewall-cmd --reload
+
+

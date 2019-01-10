@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">PET PLANT</string>
+    <string name="title_page">처음 화면으로</string>
+    <string name="join_name">SIGN UP</string>
+    <string name="join_description">Start a conversation"\n"with plants!</string>
+    <string name="join_title">회원 가입</string>
+    <string name="login_name">LOG IN</string>
+    <string name="login_description">Talk with plants!</string>
+    <string name="login_submit">Log In</string>
+    <string name="register_submit">Register</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_pw_hint">Password</string>
+
+    <string name="remember">Remember Me</string>
+    <string name="auto_login">Auto Login</string>
+    <string name="agreement">I agree to Email registration</string>
+
+    <string name="profile_title">식물 프로필 생성</string>
+    <string name="profile_plant_name">NickName</string>
+    <string name="profile_plant_type">Species</string>
+    <string name="profile_machine">Machine S/N</string>
+    <string name="profile_serialNumber">S/N</string>
+    <string name="image_search">Image Search</string>
+    <string name="profile_submit">Make Profile!</string>
+    <string name="take_photo">Take photo</string>
+
+    <string name="detail_info">식물 상세 정보</string>
+    <string name="go_talk">대화하러 가기</string>
+
+    <string name="logout">로그아웃</string>
+
+    <string name="moisture">Moisture</string>
+    <string name="illumination">Illumination</string>
+    <string name="temperature">Temperature</string>
+
+    <string name="kakao_app_key">728f0fe9c34f10133ef16f2cf8d7f476</string>
+</resources>

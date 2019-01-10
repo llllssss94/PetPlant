@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 우측에 메뉴를 넣고 싶으면 이렇게
+    <item
+        android:id="@+id/action_navigate"
+        android:icon="@drawable/ic_dehaze_black_40dp"
+        android:title="네비게이션"
+        app:showAsAction="always" />
+    -->
+</menu>
